@@ -1,0 +1,89 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Modern Slider */
+.carousel {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slider Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots Navigation */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-dots button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-dots button.active {
+  background-color: #333;
+}

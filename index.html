@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Mobil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Section -->
+  <div id="home">
+    <header>
+      <h1>Mobil MPV</h1>
+      <button id="toggle-menu">≡</button>
+    </header>
+    <!-- Slider Section -->
+    <section class="carousel">
+      <h2>Trendy</h2>
+      <div class="slider">
+        <button class="slider-btn prev">◀</button>
+        <div class="slider-wrapper">
+          <div class="slider-item">Mobil 1</div>
+          <div class="slider-item">Mobil 2</div>
+          <div class="slider-item">Mobil 3</div>
+          <div class="slider-item">Mobil 4</div>
+        </div>
+        <button class="slider-btn next">▶</button>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <div class="categories">
+      <button>Low MPV</button>
+      <button>Medium MPV</button>
+      <button>High MPV</button>
+    </div>
+
+    <!-- Articles -->
+    <section class="articles">
+      <h2>Artikel & Blog</h2>
+      <p>FAQ:</p>
+      <p>Pertanyaan: Jawaban:</p>
+      <p>About Us:</p>
+      <p>Alamat pusat: No Telepon</p>
+    </section>
+  </div>
+
+  <!-- Profile Section -->
+  <div id="profile">
+    <h2>Profil Pengguna</h2>
+    <div class="profile-picture">
+      <img src="https://via.placeholder.com/100" alt="Profile">
+    </div>
+    <form>
+      <label>Nama</label>
+      <input type="text" placeholder="Nama">
+      <label>Sandi</label>
+      <input type="password" placeholder="Sandi">
+      <button type="button" id="logout">Logout</button>
+    </form>
+    <h3>Favorit:</h3>
+    <div class="favorites">
+      <div class="favorite-item">[Favorit 1]</div>
+      <div class="favorite-item">[Favorit 2]</div>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <button class="nav-btn" data-target="home">🏠</button>
+    <button class="nav-btn" data-target="search">🔍</button>
+    <button class="nav-btn" data-target="profile">📍</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
